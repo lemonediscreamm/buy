@@ -1,0 +1,80 @@
+INSERT INTO category VALUES ( 1, '野菜' );
+INSERT INTO category VALUES ( 2, '果物' );
+INSERT INTO category VALUES ( 3, '飲料' );
+INSERT INTO item VALUES ( 1,  'たまねぎ', '染色体数は2n=16。生育適温は20℃前後で、寒さには強く氷点下でも凍害はほとんど見られないが、25℃以上の高温では生育障害が起こる。', 100, 'tamanegi.jpg', 1 );
+INSERT INTO item VALUES ( 2,  'にんじん', '細長い東洋系品種と、太く短い西洋系品種の2種類に大別され、ともに古くから薬や食用としての栽培が行われてきた。', 150, 'ninjin.jpg', 1 );
+INSERT INTO item VALUES ( 3,  'ピーマン', 'ピーマン自体はトウガラシの品種の一つであり、果実は肉厚でカプサイシンを含まない。', 50, 'pi-man.jpg', 1 );
+INSERT INTO item VALUES ( 4,  'なす',     '世界の各地で独自の品種が育てられている。加賀茄子などの一部例外もあるが日本においては南方ほど長実または大長実で、北方ほど小実品種となる。', 120, 'nasu.jpg', 1 );
+INSERT INTO item VALUES ( 5,  'みかん', '日本の代表的な果物で、バナナのように、素手で容易に果皮をむいて食べることができるため、冬になれば炬燵の上にミカンという光景が一般家庭に多く見られる。', 30, 'mikan.jpg', 2 );
+INSERT INTO item VALUES ( 6,  'りんご', '現在日本で栽培されているものは、明治時代以降に導入されたもの。病害抵抗性、食味、収量などの点から品種改良が加えられる。', 100, 'ringo.jpg', 2 );
+INSERT INTO item VALUES ( 7,  'ぶどう', '葉は両側に切れ込みのある15 - 20cmほどの大きさで、穂状の花をつける。', 130, 'budou.jpg', 2 );
+INSERT INTO item VALUES ( 8,  'いちご', 'イチゴとして流通しているものは、ほぼ全てオランダイチゴである。', 250, 'ichigo.jpg', 2 );
+INSERT INTO item VALUES ( 9,  'コーラ',             '複数あるコーラ飲料製造社ではこれらの香味料以外にその会社独自の香味料を加えることで独自の製品として開発している。', 120, 'cola.jpg', 3 );
+INSERT INTO item VALUES ( 10, 'カルピス',           '企業としてのカルピスの創業者は、僧侶出身の三島海雲。創業初期は国分グループだった。', 120, 'karupisu.jpg', 3 );
+INSERT INTO item VALUES ( 11, 'ウーロン茶',         '烏龍茶（ウーロンちゃ）は、中国茶のうち青茶（せいちゃ、あおちゃ）と分類され、茶葉を発酵途中で加熱して発酵を止め、半発酵させた茶である。', 110, 'u-rontya.jpg', 3 );
+INSERT INTO item VALUES ( 12, 'ミネラルウォーター', 'ミネラルウォーター（Mineral water）とは、容器入り飲料水のうち、地下水を原水とするものを言う。', 100, 'water.jpg', 3 );
+
+INSERT INTO category VALUES ( 4, '肉類' );
+INSERT INTO category VALUES ( 5, '魚類' );
+INSERT INTO category VALUES ( 6, '加工食品' );
+INSERT INTO category VALUES ( 7, '菓子' );
+INSERT INTO category VALUES ( 8, '工芸品' );
+INSERT INTO category VALUES ( 9, 'その他' );
+
+INSERT INTO item VALUES ( 13, '淡路島バーガー', ' 兵庫県の淡路島で販売されているご当地バーガー。', 700, 'awajiba-ga-.jpg', 6,1);
+INSERT INTO item VALUES ( 14, '神戸ビーフ', ' 神戸ビーフの証しとして、兵庫県の花であるノジギクを形どった刻印が押されている。', 10000, 'kobegyu.jpg', 5,1 );
+INSERT INTO item VALUES ( 15, '生しらす', '飯を盛った丼の上に釜揚げしらすなどを載せ、タレや醤油などを掛けて食べれる。', 1000, 'awajiba-ga-.jpg', 6,1 );
+INSERT INTO item VALUES ( 16, 'レタス', ' 兵庫県の淡路島で販売されているご当地バーガー。', 700, ' retasu.jpg', 1,1 );
+INSERT INTO item VALUES ( 17, '淡路玉ねぎ', ' みずみずしく、辛みが少ない', 300, 'awajitamanegi.jpg', 1,1 );
+
+
+INSERT INTO item VALUES ( 18, '若鮎', ' ふんわりと焼き上げた生地に求肥を包んだ「あゆの和菓子」', 300, 'ayu.jpg', 7 ,2);
+INSERT INTO item VALUES ( 19, 'ちりめん山椒', ' 山椒の実とちりめんじゃこを炊き合わせたもの', 600, 'chirimensansyo.jpg', 5 ,2);
+INSERT INTO item VALUES ( 20, '風呂敷', ' 本格的な絹(シルク)の風呂敷から、日常で使える、かわいいおしゃれな風呂敷。', 1000, 'furoshiki.jpg', 8,2 );
+INSERT INTO item VALUES ( 21, '下駄の置物', ' 玄関や 和室の飾りものに。かわいく、また日本らしい縁起のよい置物です。', 1000, 'geta.jpg', 8,2 );
+INSERT INTO item VALUES ( 22, '五色豆', ' 宮中で祝事に使われた赤・白・黄・緑・茶の王朝五彩をお豆の色にあしらった色鮮やかな一品。', 300, 'gosyokumame.jpg', 7,2 );
+INSERT INTO item VALUES ( 23, 'いちご大福', ' いちご大福で主役になるいちごは国内より糖度、酸味、柔らかさなどを考慮し厳選しております。', 500, 'ichigodaifuku.jpg', 7,2 );
+
+
+
+INSERT INTO item VALUES ( 24, 'きつね煎餅', ' きつね煎餅は参拝客にとって直会や参拝の記念品として、また御利益の御裾分けとしてお土産として喜ばれています。', 1000, 'kitsune.jpg', 7,2 );
+INSERT INTO item VALUES ( 25, 'きつね置物', ' いつでもちょこんと座ってあなたを見つめています眺めて和んでいただけましたら幸いです', 500, 'kitsunenookimono.jpg', 8,2 );
+INSERT INTO item VALUES ( 26, '黒胡麻八ツ橋', ' 生地には黒胡麻を使用して、あんの風味をより一層引立てています。', 1000, 'kurogomayatsuhashi.jpg', 7,2 );
+INSERT INTO item VALUES ( 27, '京あめ', ' ここならではの、経験豊かな職人技と、厳選した原料を使用し、手間ひまかけて飴を作り出しています。', 500, 'kyoame.jpg', 7,2 );
+
+
+INSERT INTO item VALUES ( 28, '生八ツ橋', ' 米粉・砂糖・ニッキを混ぜて蒸した生地を薄くのばして焼いたものです。', 1000, 'namayatsuhashi.jpg', 7,2 );
+INSERT INTO item VALUES ( 29, '寿司飴', ' 色や形も本物そっくりのお寿司キャンディ', 300, 'sushiame.jpg', 7,2 );
+INSERT INTO item VALUES ( 30, 'つげ櫛', ' 静電気が起こりにくく、髪の毛をいたわり、頭皮への適度なマッサージ効果があります。', 1000, 'tsugegushi.jpg', 8,2 );
+INSERT INTO item VALUES ( 31, '和三盆', ' 日本独特の砂糖で、さらりとした口どけと上品な風味が特徴です。', 700, 'wasanbon.jpg', 7,2 );
+INSERT INTO item VALUES ( 32, '八ツ橋', ' ごまときな粉を生地に混ぜ込んで、ニッキ味で仕上げたプレーンです', 500, 'yatsuhashi.jpg', 7,2 );
+
+
+
+INSERT INTO item VALUES ( 33, 'いちご', '奈良が誇るいちごの品種「あすかルビー」は「アスカウェイブ」と「女峰」を交配して奈良県農業試験場で育成されたイチゴです。 ', 1000, 'ichigo.jpg', 2,3);
+INSERT INTO item VALUES ( 34, '今市かぶ', ' 昭和30年ころまで奈良市今市町でさかんに栽培されていた、早生で中型、扁平な形をしたかぶです', 500, 'ayu.jpg', 1,3 );
+INSERT INTO item VALUES ( 35, '御所柿', ' 1600年代に出現した「御所柿」は、まさに「羊羹のような甘さ」です', 300, 'kaki.jpg', 2,3 );
+INSERT INTO item VALUES ( 36, '柿の葉寿司(大)', ' 厳選ネタとすし飯を柿の葉に包んで熟成させ旨味を引き出す伝統の味。', 1000, 'kakinohazushi.jpg', 5,3 );
+INSERT INTO item VALUES ( 37, '柿の葉寿司(小)', '厳選ネタとすし飯を柿の葉に包んで熟成させ旨味を引き出す伝統の味。 ', 300, 'kakinohazushi4.jpg', 5,3 );
+INSERT INTO item VALUES ( 38, 'きなこ団子', ' 昔ながらの製法で一本一本手作りしている自慢のきなこ団子は、もっちりとした団子に優しい甘さの味付けが施されクセになる味わい。', 500, 'kinakodango.jpg', 7,3 );
+
+INSERT INTO item VALUES ( 39, '葛切り', ' 現在は外国産の葛が主流になっていますが、奈良の特に吉野は今では珍しい葛粉100%の本葛を使用しています。', 800, 'kuzukiri.jpg', 7,3 );
+INSERT INTO item VALUES ( 40, 'めはり寿司', ' 握り飯を高菜の葉で包んだだけというシンプルさでありながら、地元の人のみならず、観光客にも大人気。', 500, 'meharizushi.jpg', 6,3 );
+INSERT INTO item VALUES ( 41, '奈良漬け', ' 新六の奈良漬は瓜，胡瓜、茄子など原料野菜を上質の酒粕とみりん粕、塩と砂糖を使って5回の漬け替え、土蔵の中で時間をかけて発酵を促し熟成させて製造。', 900, 'narazuke.jpg', 6,3 );
+INSERT INTO item VALUES ( 42, 'にぎり墨', ' 墨の香や 奈良の都の 古梅園 古梅園では古くからの伝統を受け継ぎ、昔ながらの採煙方法にこだわっています。', 900, 'nigirisumi.jpg', 8,3 );
+INSERT INTO item VALUES ( 43, ' 鹿のおもちゃ', ' 奈良のお土産屋さんで子供向けに売られているビニール製の鹿のおもちゃです。', 500, 'shika.jpg', 8,3 );
+
+INSERT INTO item VALUES ( 44, ' 鹿せんべい', ' 奈良公園（奈良市）のシカのおやつとして知られる「鹿せんべい」です。', 500, 'shikasenbei.jpg', 7,3 );
+INSERT INTO item VALUES ( 45, ' 三輪そうめん', ' そうめん発祥の地、三輪から伝統と革新に満ちたそうめんです。', 1000, 'so-men.jpg', 9,3 );
+INSERT INTO item VALUES ( 46, ' よもぎ餅', ' 奈良のお土産なら高速餅つき（もちつき）によるできたてのよもぎ餅。', 500, 'yomogimochi.jpg', 7,3 );
+INSERT INTO item VALUES ( 55, '大和肉鶏 ', '奈良県で生産され、地鶏肉の日本農林規格（特定JAS規格）を満たしている地鶏です', 1500, 'toriniku.jpg', 4,3 );
+
+INSERT INTO item VALUES ( 47, ' 粟おこし', '創業当時、運河工事で岩がごろごろ出てきたことから「大阪の掘り起こし、岩おこし」と命名され、浪花の繁栄を象徴する土産菓子。', 700, 'awaokoshi.jpg', 7,4 );
+INSERT INTO item VALUES ( 48, '紅しょうが天', '関西の新定番「紅しょうがの天ぷら」。', 500, 'benishogaten.jpg', 6,4 );
+INSERT INTO item VALUES ( 49, ' ビリケンさんの置物', '商売繁盛＆開運招福 大阪名物ビリケンさんの縁起のええ置物。', 1000, 'biriken.jpg', 8,4 );
+INSERT INTO item VALUES ( 50, 'ヘラ ', 'お好み焼や鉄板焼での必需品！', 700, 'hera.jpg', 9,4 );
+INSERT INTO item VALUES ( 51, '串カツ', '串カツ10種(合計50本)と『二度漬け禁止!ソース』が入ったお得なセット♪', 1000, 'kushikatsu.jpg', 6,4 );
+INSERT INTO item VALUES ( 52, 'お好み焼き ', 'レンジで温めるだけ！お得な送料無料10枚セット豚お好み焼き', 2000, 'okonomiyaki.jpg', 6,4 );
+INSERT INTO item VALUES ( 53, 'たこ', 'たこ焼き、鮮度が良く大変甘みがあり美味しいミズタコです。', 1950, 'tako.jpg', 5,4 );
+INSERT INTO item VALUES ( 54, 'たこ焼き', '昔ながらの八ちゃんたこ焼セット 100個入り', 3500, 'takoyaki.jpg', 6,4 );
+INSERT INTO item VALUES ( 56, 'たこ焼き機','たこ焼き以外に、アヒージョ、鈴カステラなどもお手軽に調理！', 1950, 'takoyakiki.jpg', 9,4 );

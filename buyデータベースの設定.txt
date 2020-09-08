@@ -1,0 +1,98 @@
+mysql -u root 
+create database buy_db default character set utf8;
+
+grant all privileges on buy_db.*to buy_user@'localhost' identified by'buy_pass' with grant option;
+
+use buy_db;
+
+//商品テーブル
+create table item(
+	item_id int unsigned not null auto_increment,
+	item_name varchar (100) not null,
+	detail text not null,
+	price DECIMAL(10,3) unsigned not null,
+	image varchar (50) not null,
+	ctg_id tinyint unsigned not null,
+	primary key( item_id ),
+	index item_idx(ctg_id)	
+);
+
+//カート
+
+create table cart (
+	crt_id int unsigned not null auto_increment,
+	customer_no int unsigned not null,
+	item_id int unsigned not null,
+	num tinyint(1) unsigned not null default 1,
+	delete_flg tinyint(1) unsigned not null default 0,
+	primary key( crt_id ),
+	index crt_idx(customer_no,delete_flg)
+);
+
+//カテゴリー
+create table category (
+	ctg_id tinyint unsigned not null auto_increment,
+	category_name varchar (100) not null,
+	primary key( ctg_id )
+);
+
+//顧客の認識
+create table session (
+	customer_no int unsigned not null auto_increment,
+	session_key varchar (32),
+	primary key( customer_no)
+);
+//顧客の認識
+drop table session;
+create table session (
+	customer_no int unsigned not null auto_increment,
+	mem_id int unsigned not null,
+	session_key varchar (32),
+	primary key( customer_no)
+);
+
+//お気に入り
+
+create table favorite (
+	like_id int unsigned not null auto_increment,
+	item_id int unsigned not null,
+	mem_id int unsigned not null,
+	like_flg tinyint(1) unsigned not null default 0,
+	primary key( like_id )
+);
+//問い合わせ
+create table inquiry (
+	id int unsigned not null auto_increment,
+	name varchar (100) not null,
+	email varchar(255) not null,
+	tel varchar(20) not null,
+	subject varchar(255) not null,
+	body varchar(255) not null,
+	primary key( id )
+);
+//掲示板
+create table board (
+	id int unsigned not null auto_increment,
+	name varchar (100) not null,
+	contents varchar(255) not null,
+	primary key( id )
+);
+ALTER TABLE board ADD subject varchar (100) not null;
+ALTER TABLE board ADD mem_id int unsigned not null;
+ALTER TABLE board ADD flg tinyint(1) unsigned not null default 0;
+ALTER TABLE board ADD item_id int unsigned not null;
+
+ALTER TABLE item ADD area_id tinyint unsigned not null;
+ALTER TABLE cart ADD orderby varchar (100) not null;
+
+//areaカテゴリー
+create table area_category (
+	area_id tinyint unsigned not null auto_increment,
+	area_category_name varchar (100) not null,
+	primary key( area_id )
+);
+
+INSERT INTO `area_category` (`area_id`, `area_category_name`) VALUES ('1', '兵庫県');
+INSERT INTO `area_category` (`area_id`, `area_category_name`) VALUES ('2', '京都府');
+INSERT INTO `area_category` (`area_id`, `area_category_name`) VALUES ('3', '奈良県');
+INSERT INTO `area_category` (`area_id`, `area_category_name`) VALUES ('4', '大阪府');
