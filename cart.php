@@ -33,25 +33,30 @@ $item_id = (isset($_GET['item_id']) === true && preg_match('/^\d+$/',$_GET['item
 
 //削除したときのcart_id
 $crt_id = (isset($_GET['crt_id']) === true && preg_match('/^\d+$/',$_GET['crt_id'])=== 1) ? $_GET['crt_id']:'';
-var_dump($_GET);
+
 $res = '';
 
 //detail.html.twigからのPOST
 if(isset($_POST['cart_in'])){
-    $cart_in=$_POST['cart_in'];
-    var_dump($cart_in);
 }
 
-
-if($item_id !== ''){
+//カートにitem追加
+if($item_id !== '' ){
+    //トークン番号が一致？
+    // if((isset($_REQUEST["chkno"]) == true) && (isset($_SESSION["chkno"]) == true)
+    // && ($_REQUEST["chkno"] == $_SESSION["chkno"])){
     $res = $cart->insCartData($mem_id,$item_id);
-    if($res === false){
-        echo "商品購入に失敗しました。";
-        exit();
-    }
-//}
+        if($res === false){
+            echo "商品購入に失敗しました。";
+            exit();
+        }
+   // }
 }
+//新しい照合番号を発番する
+$_SESSION["chkno"] = $chkno = mt_rand();
 
+var_dump($_SESSION);
+var_dump($_REQUEST);
 
 //カートの削除
 if($crt_id !== ''){
@@ -85,14 +90,14 @@ $cartData = $db->select($table,$column, $where);
 
 
 
-//新しい照合番号を発番する
-//$_SESSION["chkno"] = $chkno = mt_rand();
+
+
 
 $context = [];
 $context['sumNum'] = $sumNum;
 $context['sumPrice'] = $sumPrice;
 $context['dataArr'] = $dataArr;
-//$context['chkno'] = $chkno;
+$context['chkno'] = $chkno;
 
 $context['cartData']=$cartData;
 
