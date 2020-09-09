@@ -36,7 +36,7 @@ $area_id = (isset($_GET['area_id']) === true && preg_match('/^[0-9]+$/',$_GET['a
 //カテゴリー取得
 $cateArr = $itm->getCategoryList();
 //エリアカテゴリー取得
-$areacateArr = $itm->getareaCategoryList();
+$areaCateArr = $itm->getareaCategoryList();
 
 //DBからitemの詳細取得
 $dataArr = $itm->getItemList($ctg_id);
@@ -64,7 +64,7 @@ $_SESSION['errArr'] = $errEmpty;
 $context = [];
 
 $context['cateArr'] = $cateArr;
-$context['areacateArr'] = $areacateArr;
+$context['areaCateArr'] = $areaCateArr;
 $context['dataArr'] = $dataArr;
 $context['areaDataArr'] = $areaDataArr;
 $context['ctg_id'] = $ctg_id;
